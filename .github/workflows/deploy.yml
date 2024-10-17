@@ -24,7 +24,7 @@ jobs:
 
       - name: S3 기존 파일들 전체 삭제 후 새로 업로드
         run: |
-          aws s3 rm --recursive s3://instagram-web
+          aws s3 rm --recursive s3://cup-web
           aws s3 cp ./ s3://instagram-web/ --recursive
 
       - name: Cloudfront 캐시 무효화
